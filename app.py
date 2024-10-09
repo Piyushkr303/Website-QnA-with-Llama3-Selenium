@@ -23,7 +23,7 @@ if groq_api_key is None:
 
 # Huggingface embedding
 hf_token = os.getenv("HF_TOKEN")
-embeddings = HuggingFaceEmbeddings(model_name="hkunlp/instructor-large")
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
